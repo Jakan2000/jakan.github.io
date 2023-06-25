@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jakan portfolio</title>
+        <script src="https://kit.fontawesome.com/f4b6bdc87c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="portFolio.css">
+    </head>
+    <body>
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="./images/Logo/jakanLogo.jpg" class="logo">
+                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-sharp fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="headerText">
+                    <h1>I am <span>Jakan.M</span></h1>
+                    <p>Software Engineer</p>
+                    
+                </div>
+            </div>
+        </div>
+
+    <!-- ---------- About ---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutColumn1"><img src="./images/jakan/JAKAN Photo.JPG"></div>
+                    <div class="aboutColumn2">
+                        <h1 class="subTitle">About Me</h1>
+                        <p class="aboutMeContent"> I am JAKAN.M from Salem, <br>
+                            I am very passionate about technology and are always seeking out new challenges to expand my knowledge and skills. Whether I am developing a new project from scratch or troubleshooting an existing system, <br>
+                            I approach every project with a solutions-oriented mindset and a dedication to excellence.
+                        </p>
+                        <div class="tabTitles">
+                            <p class="tabLinks activeLink" onclick="openTab('skills')">Skills</p>
+                            <p class="tabLinks" onclick="openTab('education')">Education</p>
+                            <p class="tabLinks" onclick="openTab('projects')">Projects</p>
+                        </div>
+                        <div class="tabContents activeTab" id="skills">
+                            <ul>
+                                <li><span>Core Java</span><br>Object Oriented Programming</li>
+                                <li><span>Selenium web driver</span><br>Automation Testing of Web Applications</li>
+                                <li><span>SQL</span><br>Strectured Query Language with Relational Data Base Management System</li>
+                                <li><span>Web Technology</span><br>Developing a Web page using HTML, CSS, JavaScript</li>
+                                <li><span>PhotoShop</span><br>Editing photos and designing banners</li>
+                                <li><span>Figma</span><br>Designing Web Application Interfaces</li>
+                                <li><span>Solid Works</span><br>Designing 3D Models</li>
+                            </ul>
+                        </div>
+                        <div class="tabContents" id="education">
+                            <ul>
+                                <li><span>B.E in Mechanical Engineering [2022]</span><br>Bannari Amman Institute of Technology, Sathy-638401</li>
+                                <li><span>Diploma in Mechanical Engineering [2018]</span><br>Kongu Polytechnic College, Perendurai-638052</li>
+                                <li><span>SSLC [2015]</span><br>Erode Hindu Kalvi Nilayam, Erode-638004</BR></li>
+                            </ul>
+                        </div>
+                        <div class="tabContents" id="projects">
+                            <ul>
+                                <li><span>ActiTime web site</span><br>Automated Create Customer module and Create Project module using Selenium web driver with Hybrid driven frame work</li>
+                                <li><span>Expremental Sstudy on Hexagram Pin Performance in Thermal Storage of Solar Dryer</span><br>Testing the performance increase in phase change material while using hexagram pin in solar dryer for agricultural purpose</li>
+                                <li><span>Fabrication of AutoClutch</span><br>Developing a prototype of safety system in automobiles, Applying clutch while panic braking</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    <!-- ---------- Projects ---------- -->
+        <div id="project">
+            <div class="container">
+                <h1 class="subTitle">My Projects</h1>
+                <div class="projectList">
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Core Java</h2>
+                        <p class="projectListContent">Java programs- loop concepts, if else concepts, method designing, Constructor chaining, Method overloading, Method overriding <br> Object Oriented Programming [Encapsulation, Inheritance, Abstraction, Polymorphism].</p>
+                        <a href="https://github.com/Jakan2000/java/tree/main" target="_blank">View Java Projects</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-robot"></i>
+                        <h2>Selenium</h2>
+                        <p class="projectListContent">Selenium web driver- POM [Page object Model],TestNG, Apache poi, Xpath, Handling frames, Handling popups, Takes screenshot, Assertion <br>Hybrid driven frame work [Data driven, Method driven, Modular driven].</p>
+                        <a href="https://github.com/Jakan2000/Selenium" target="_blank">View Selenium Projects</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-code"></i>
+                        <h2>Web Technology</h2>
+                        <p class="projectListContent">Developing a simple projects using HTML, CSS, JavaScript</p>
+                        <a href="https://github.com/Jakan2000/JavaScript" target="_blank">View Web Technology Projects</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>SQL</h2>
+                        <p>Strectured Query Language - Relational Data Base Management System</p>
+                        <a href="https://github.com/Jakan2000/SQL" target="_blank">View SQL Queries</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- ---------- Activities ---------- -->
+        <div id="activities">
+            <div class="container">
+                <h1 class="subTitle">My Activities</h1>
+                <div class="workList">
+                    <div class="work">
+                        <img src="./images/Work/Editing.jpg">
+                        <div class="layer">
+                            <h3>Editing</h3>
+                            <p>Designing Posters, Editing Photos</p>
+                            <a href="#"><i class="fa-sharp fa-regular fa-folder-open"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./images/Work/solid works.1.jpg" alt="">
+                        <div class="layer">
+                            <h3>Solid Works</h3>
+                            <p>Designing 3D Parts, Assembly</p>
+                            <a href="#"><i class="fa-sharp fa-regular fa-folder-open"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Show More</a>
+            </div>
+        </div>
+
+    <!-- ---------- Contact ---------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactLeft">
+                        <h1 class="subTitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>jakanbob2000@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9384165123</p>
+                        <div class="socialMediaIcons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                        <a href="./data/Resume JAKAN M.pdf" download class="btn cvbtn">Download CV</a>
+                    </div>
+                    <div class="contactRight">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn submitbtn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRight">Copyright © Jakan</div>
+        </div>
+
+    <!-- ---------- About Me TabTitles ---------- -->
+        <script>
+
+            var tabLinks=document.getElementsByClassName("tabLinks");
+            var tabContents=document.getElementsByClassName("tabContents");
+            function openTab(tabName){
+                for(tabLink of tabLinks){
+                    tabLink.classList.remove("activeLink");
+                }
+                for(tabContent of tabContents){
+                    tabContent.classList.remove("activeTab");
+                }
+                event.currentTarget.classList.add("activeLink");
+                document.getElementById(tabName).classList.add("activeTab");
+            }
+
+        </script>
+
+    <!-- ---------- Side Menu  ---------- -->
+        <script>
+
+            var sideMenu=document.getElementById("sideMenu");
+            function openMenu(){
+                sideMenu.style.right="0";
+            }
+            function closeMenu(){
+                sideMenu.style.right="-200px"
+            }
+
+        </script>
+
+<script>
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzUK6dc9I2b2-tTGLn2Q6ge699Wv8UIYj4BYsJEGASz90viEbOqQtQjfReXLyvekuUr5g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){msg.innerHTML=""},5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+
+    </body>
+</html>
